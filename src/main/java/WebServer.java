@@ -48,7 +48,7 @@ public class WebServer extends WebSocketServer {
 
     public static void main(String[] args) {
 
-        WebSocketServer s = new WebSocketServer(new InetSocketAddress("localhost",22237), 1, null) {
+        WebSocketServer s = new WebSocketServer(new InetSocketAddress(22237), 1, null) {
             @Override
             public void onOpen(WebSocket conn, ClientHandshake handshake) {
                 System.out.println("onOpen");
